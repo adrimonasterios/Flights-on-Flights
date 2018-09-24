@@ -1,0 +1,999 @@
+*{
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+}
+
+li{
+  list-style-type: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+input{
+  font: inherit;
+}
+
+
+/*header*/
+
+body{
+  margin:0;
+  padding: 0;
+}
+
+header{
+  margin:0;
+  padding:0;
+}
+
+.desktop_body{
+  display: none;
+}
+
+.tab{
+  background-color: rgb(228, 226, 227);
+  width: 100%;
+  display:flex;
+}
+
+.fa-arrows-alt-h{
+  font-size: 0.8em
+}
+
+.tablinks{
+  background-color: rgba(255, 0, 0, 0);
+  color: rgb(67, 114, 219);
+  border: solid rgb(251, 251, 251) 0.01em;
+  display:flex;
+  padding: 0.3em 0.6em;
+  flex-grow: 1;
+}
+
+.tabactive{
+  background-color: rgba(243,243,243, 1);
+  color: rgb(37, 36, 36);
+  border-bottom: none;
+}
+
+/* .tablinks:hover{
+  background-color: rgba(251, 251, 251, 1);
+  color: rgb(37, 36, 36);
+} */
+
+.fa-plane{
+  display:flex;
+  margin-right: 0.4em;
+  font-size: 1.5em;
+  align-self: center;
+}
+
+.ttitle{
+  display:block ;
+  margin:auto 0;
+}
+
+.upti{
+  display:block;
+  font-weight: bold;
+}
+
+.dates{
+  display:block;
+  width: 100%
+}
+
+.search{
+  background-color: rgba(243,243,243, 1);
+  display:block;
+
+}
+
+.city_container{
+  display:flex;
+  margin: auto 0.5em;
+}
+
+.city{
+  background-color: white;
+  height: 1.6em;
+  margin: 1em 0em;
+  color: rgb(107, 103, 104);
+  flex-grow:1;
+  border-style: solid;
+  border-radius: 0px;
+  -webkit-appearance: none;
+  padding-left: 0.5em;
+}
+
+.calendar_container{
+  position:relative;
+  width: 65%;
+  padding-right: 0;
+  display: inline-flex;
+  margin: 0 0 1em 0.5em;
+}
+
+.days{
+  color: white;
+  margin: 0;
+  width: 100%;
+}
+
+.fa-calendar-alt{
+  position:absolute;
+  margin-left: 0.5em;
+  color: rgb(107, 103, 104);
+  align-self: center;
+  justify-content: center;
+}
+
+.dates2_container{
+  position:absolute;
+  display: flex;
+  height:1.5em;
+}
+
+.dates2d{
+  margin:0;
+  align-self: center;
+  margin-left: 1.6em;
+  color: rgb(107, 103, 104);
+}
+
+.dates2{
+  background-color: rgba(243,243,243, 1);
+  border: solid rgb(228, 226, 227) 0.01em;
+  font-size: 0.9em;
+  padding-left: 0.4em;
+  padding-right: 0.4em;
+}
+
+[value="Search"]{
+  display:none;
+}
+
+.fa-search{
+  background-color: rgb(228, 132, 19);
+  color: white;
+  font-size: 1.2em;
+  padding: 0.1em;
+  border: solid 0.01em rgba(0,0,0,0);
+  border-radius: 0.1em;
+  display: inline-flex;
+  position: absolute;
+  align-self:center;
+  margin-left: 0.4em;
+}
+
+.fa-filter{
+  background-color: rgb(228, 132, 19);
+  color: white;
+  font-size: 1.2em;
+  padding: 0.1em;
+  border: solid 0.01em rgba(0,0,0,0);
+  border-radius: 0.1em;
+  display: inline-flex;
+  position: absolute;
+  align-self:center;
+  margin-left: 3.5em;
+}
+
+[value="+"]{
+  background-color: rgba(243,243,243, 1);
+  border: solid 0.04em;
+  border-color: rgb(228, 226, 227);
+  color: rgb(107, 103, 104);
+  padding: 0.1em;
+  border-radius: 0.1em;
+  display: inline-flex;
+  position: absolute;
+  width: 1.5em;
+  height: 1.5em;
+  align-self: center;
+  justify-content: center;
+  margin-left:2.3em;
+  font-weight: bold;
+}
+
+/*aside*/
+
+.sidebar{
+  background-color: rgba(243,243,243, 1);
+  margin-top: 0;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 0.7em;
+  display: none;
+}
+
+/*
+.hidside{
+  display: none;
+}
+
+.hrhid{
+  display: none;
+}
+
+.stops_container{
+  width:50%;
+  flex-wrap: nowrap;
+}
+
+.stops{
+  display: block;
+}
+
+.checkbox_stops{
+  display: flex;
+}
+
+h5{
+  font-weight: bolder;
+  display: block;
+  width:50%;
+}
+
+.times_container{
+  width:50%
+} */
+
+/*main*/
+
+main{
+  display: block;
+  border: solid rgb(228, 226, 227) 0.06em;
+}
+
+.num_flights{
+  display: flex;
+  position: relative;
+}
+
+.nflights{
+  display: block;
+}
+
+h3{
+  font-weight: normal;
+}
+
+.h3fl{
+  display: block;
+  margin-left: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+.sort{
+  display: none;
+}
+
+.sort_by{
+  margin: 1em 0.5em 0 1.5em;
+}
+
+.bold1{
+  font-weight: bolder;
+}
+
+.show{
+  font-size: 0.8em;
+  margin: 0.5em 0 0.8em 0.8em;
+}
+
+.selsort{
+  border: 0;
+  border-radius: 0px;
+  -webkit-appearance: none;
+  background-color: white;
+}
+
+hr{
+  margin:0;
+}
+
+.hrmain{
+  width: 80%;
+  margin: 0 auto 0 10%;
+  border: solid rgb(228, 226, 227) 0.04em;
+}
+
+.hiddesk{
+  color: black;
+}
+
+.hiddesk:visited{
+  color: black;
+}
+
+.ad{
+  background-color: rgba(243,243,243, 1);
+  display: flex;
+}
+
+.left_side{
+  display: none;
+}
+
+.right_side{
+  margin: 0 1em 0 1em;
+  padding: 0 0 1em 0;
+}
+
+.h3op{
+  font-weight: bolder;
+}
+
+.descr{
+  font-size: 0.8em;
+}
+
+.adlink{
+  color: rgb(228, 132, 19);
+  display:inline-block;
+  width: 85%;
+  margin-right: auto;
+  font-weight: bold;
+}
+
+.adtxt{
+  font-size: 0.8em;
+  color: rgb(180, 180, 182);
+  display: inline-block;
+  text-align: right;
+  width: 10%;
+}
+
+[alt="icelandairl"]{
+  width: 100%;
+  display: block;
+  height:auto;
+  border: solid rgb(228, 226, 227) 0.06em;
+}
+
+.itinerary{
+  display: flex;
+}
+
+.fa-long-arrow-alt-right{
+  align-self:flex-start;
+  margin-right: 0.5em;
+}
+
+.itinerary .descr{
+  margin-right: 0.5em;
+  margin-top: 0;
+}
+
+.chtitle{
+  display: block;
+  position:relative;
+  margin-top: 0.5em;
+}
+
+[alt="icelandair"]{
+  display: inline-block;
+  width: 25%;
+  height: auto;
+  border: solid rgb(228, 226, 227) 0.06em;
+}
+
+.h3ch{
+  display:inline-block;
+  width: auto;
+  position: absolute;
+  margin-top: 1.2em;
+  margin-left: 0.8em;
+  font-size: 1.2em;
+}
+
+.itinerary .numder{
+  text-align: right;
+  margin-left: 0.5em;
+}
+
+.ecotxt{
+  font-size: 0.5em;
+  display: inline-block;
+  margin-right: 5em;
+  color: rgb(180, 180, 182);
+}
+
+.fa-moon{
+  position: absolute;
+  text-align: right;
+  display: inline-block;
+  margin-left: 11.5em;
+  margin-top: 0.5em;
+  color: rgb(180, 180, 182);
+}
+
+
+
+/*footer*/
+
+
+
+footer{
+  background-color: rgb(29, 40, 59);
+  font-size: 1em;
+  width: 100%;
+  height: 4em;
+  bottom:0;
+  color: white;
+}
+
+.footer_links{
+  color: white;
+  margin: 1.4em;
+  display: inline-block;
+
+}
+
+.footer_links:visited{
+  color: white;
+}
+
+
+
+
+/*Desktop*/
+
+@media only screen and (min-width : 768px) {
+
+  .mobile_body{
+    display: none;
+  }
+
+  .desktop_body{
+    display:inherit;
+    background-color: rgb(228, 226, 227);
+  }
+  /* header */
+
+  .tab{
+    margin-left: 2%;
+  }
+
+  .tablinks{
+    max-width: 13%
+  }
+
+  .city_container{
+    width: 40%;
+    display: inline-block;
+    margin-left: 2%;
+    margin-right: 0;
+    height: 2em;
+  }
+
+  .city{
+    width: 49.5%;
+    display: inline-block;
+    height: 2em;
+    border: solid rgb(228, 226, 227) 0.06em;
+  }
+
+  .calendar_container{
+    display: inline-flex;
+    width: 35%;
+    margin-top: 1em;
+    -webkit-appearance: none;
+    background-color: white;
+    height: 2em;
+    flex-grow:1;
+    border: solid rgb(228, 226, 227) 0.06em;
+    border-radius: 0px;
+    padding-left: 0em;
+    margin-left: 0;
+  }
+
+  .upti2{
+    margin-right: 0;
+    font-weight: bold;
+  }
+
+  .days{
+    color: rgb(180, 180, 182);
+    text-align: right;
+    padding-right: 0.5em;
+    width:100%;
+    height:auto;
+    border:0;
+  }
+
+  .fa-calendar-alt{
+    align-self: center;
+  }
+
+  .dates2d{
+    margin-top: 0.3em;
+    margin-left: 2em;
+  }
+
+  .dates2{
+    font-size: 1em;
+    padding: 0.25em 0.8em;
+    align-self: center;
+  }
+
+  [value="Search"]{
+    display:inline-block;
+    height: 2em;
+    width: 10em;
+    font:inherit;
+    border-radius: 0px;
+    -webkit-appearance: none;
+    background-color: rgb(228, 132, 19);
+    color: white;
+    font-weight: bold;
+    text-shadow: 2px 0px rgba(117, 117, 117, 0.5)
+  }
+
+  [value="+"]{
+    padding:0;
+    border-radius: 0.1em;
+    display: inline-flex;
+    position: absolute;
+    width: 1em;
+    height: 1em;
+    align-self: center;
+    margin-left:0.5em;
+    font-size: 2em;
+    margin-top: 0.5em;
+    align-self:center;
+    line-height: 0.5em;
+  }
+
+/*aside*/
+
+.sidebar{
+  background-color: rgba(243,243,243, 1);
+  margin-top: 0;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 0.7em;
+  display: inline-flex;
+  width: 25%;
+  border: solid rgb(228, 226, 227) 0.06em;
+  top:0;
+}
+
+.flexdates{
+  width:100%;
+  height: auto;
+  max-height: 1%;
+}
+
+.unlist{
+  padding-left: 4%;
+  display: block;
+}
+
+.list1::before {
+  content: "• ";
+}
+
+.list1{
+  font-size: 1em;
+  display: inline-block;
+  margin: 0.2em 1em;
+}
+
+.list1_links{
+  font-size: 0.85em;
+}
+
+.sn1{
+  display: block;
+  margin-left: 10%;
+  margin-bottom: 1em;
+}
+
+.normal2{
+  font-size: 0.85em;
+}
+
+.list1_links1{
+  font-size: 1em;
+}
+
+.pricetrend{
+  display: flex;
+  flex-direction: column;
+  align-content:stretch;
+  position: relative;
+}
+
+h5{
+  font-weight: bold;
+}
+
+.h5lay{
+  margin: 1em 0 0.5em 10%;
+  width: 80%;
+}
+
+[alt="chart"]{
+  width:80%;
+  height: auto;
+  margin-left: 10%;
+}
+
+.bold1{
+  font-size: 0.85em;
+  font-weight: bold;
+}
+
+.walt_container{
+  display:flex;
+  flex-direction: row;
+  justify-content:center;
+}
+
+.walt{
+  width: 40%;
+  height: auto;
+}
+
+.normal1{
+  font-size: 0.85em;
+}
+
+.pmf{
+  margin-left: 10%;
+  margin-top: 0;
+}
+
+.fa-info{
+  margin-left: 2em;
+}
+
+.stops_container{
+  width:100%;
+  flex-wrap: nowrap;
+}
+
+.stops{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0.5em;
+}
+
+.checkbox_stops{
+  display:flex;
+  margin-left: 10%;
+}
+
+.numlay{
+  justify-content: end;
+  width: 40%;
+  text-align: right;
+}
+
+.stoplay{
+  width:40%;
+}
+
+.checkbox_stops [checked="checked"]{
+  color: black;
+  background-color: red;
+}
+
+h5{
+  font-weight: bolder;
+  display: block;
+  width:50%;
+}
+
+.matr{
+  display: block;
+  margin-left: 10%;
+  padding-bottom: 1em;
+}
+
+.times_container{
+  width:100%
+}
+
+.times{
+  margin-left: 10%;
+}
+
+.toff{
+  margin-bottom: 0.2em;
+}
+
+.toh{
+  margin-top: 0.2em;
+}
+
+.lantim{
+  display: block;
+  margin-left: 10%;
+  padding-bottom: 1em;
+}
+
+.airports_container{
+  width: 100%;
+}
+
+.airports{
+  padding-left: 10%;
+  display: flex;
+  flex-direction: column;
+}
+
+h6{
+  font-size: 0.9em;
+}
+
+.checkboxair{
+  margin-left: 10%;
+  display:flex;
+}
+
+.airlay{
+  width:50%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.numlayair{
+  justify-content: end;
+  width: 30%;
+  text-align: right;
+}
+
+.cities{
+  margin:0.5em 0 0.5em 10%;
+}
+
+/*main*/
+
+main{
+  display: inline-flex;
+  flex-direction: column;
+  width: 74.5%;
+  height:auto;
+  margin-left: -0.4em;
+}
+
+.num_flights{
+  display: flex;
+  position: relative;
+  background-color: white;
+}
+
+.num_flights .bold1{
+  font-size: 1.3em;
+  flex-direction: row;
+  width: auto;
+}
+
+.ofc{
+  font-size: 1em;
+}
+
+.h3fl{
+  display: inline-flex;
+  width: 18%;
+  margin: 1em 0 1em 4%;
+}
+
+.show{
+  display: flex;
+  margin: 1.55em 0em;
+  align-self: center;
+  justify-content: center;
+}
+
+.sort_container{
+    margin-left: 50%;
+}
+
+.sort_container .bold2{
+  font-size: 0.85em;
+  font-weight: bold;
+}
+
+.sort{
+  display: inline-block;
+}
+
+.sort_by{
+  display: inline-block;
+  margin-left: 0.1em;
+}
+
+.left_side{
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  width: 22%;
+  text-align: center;
+  align-items: flex-start;
+}
+
+.select_btn{
+  height: 2em;
+  width: 10em;
+  font:inherit;
+  border-radius: 0px;
+  -webkit-appearance: none;
+  background-color: rgb(228, 132, 19);
+  color: white;
+  font-weight: bold;
+  text-shadow: 2px 0px rgba(117, 117, 117, 0.5);
+}
+
+.left_side .select_btn:visited{
+  color: white;
+}
+
+.right_side{
+  display: flex;
+  flex-direction: row;
+  padding-top: 1em;
+}
+
+.middle{
+  width: 35em;
+  display: flex;
+  flex-direction: column;
+  border-left: solid rgb(228, 226, 227) 0.06em;
+  padding-left: 1em;
+}
+
+.rights{
+  display:flex;
+  flex-direction: row;
+}
+
+[alt="icelandairl"]{
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-self: center;
+}
+
+.adtxt{
+  position: absolute;
+  align-self: flex-start;
+  margin-left: 45%;
+  margin-top: 0;
+}
+
+.choice{
+  display:flex;
+  flex-direction: row;
+  background-color: white;
+}
+.normal5{
+  color: rgb(107, 103, 104);
+  font-size: 0.7em;
+  margin-top: 0.2em;
+  margin-bottom: 0.3em;
+  display: flex;
+}
+
+.h3o{
+  display: flex;
+  margin-bottom: 0;
+  font-weight: bold;
+}
+
+.leftbor{
+  padding-right: 1.7em;
+  border-right: solid rgb(228, 226, 227) 0.06em;
+}
+
+.leftlink_container{
+  display:flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 0.5em;
+}
+.leftcont{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 0.5em;
+}
+
+.leftlink{
+  display: flex;
+  font-size: 0.7em;
+}
+
+.numlaym{
+  display: flex;
+  justify-content: end;
+  width: 20%;
+  text-align: right;
+}
+
+.linklay{
+  display: flex;
+  width: 80%
+}
+
+.sites{
+  display: flex;
+  align-self: flex-start;
+}
+
+.leftlinkz{
+  display: inline-block;
+  font-size: 0.7em;
+}
+
+.rside{
+  display: block;
+}
+
+.middles{
+  width: 30em;
+  display: block;
+  padding-left: 1em;
+  margin-left: -6.5em;
+}
+
+.it{
+  display:flex;
+  margin-top: 2em;
+}
+
+.h3ch{
+  margin-top: 0;
+  margin-left: 0;
+}
+
+[alt="icelandair"]{
+  display: inline-block;
+  width: 6em;
+  margin-left: 1em;
+}
+
+.buttons{
+  display: flex;
+  flex-direction: row;
+  margin-top: 2em;
+  margin-left: 1em;
+}
+
+.buttons [type="button"]{
+  margin-right: 0.5em;
+  padding: 0.3em 2em;
+  -webkit-appearance: none;
+  background-color: rgba(243,243,243, 1);
+  border: solid rgb(228, 226, 227) 0.06em;
+  font-size: 0.85em;
+  color: rgb(169, 170, 168);
+}
+
+.ecos{
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  margin-top: 5em;
+  padding-bottom: 1em;
+}
+
+.ecotxt{
+  display: flex;
+  font-size: 0.7em;
+  text-align: right;
+  align-self: flex-end;
+  margin-bottom: 0;
+}
+
+.fa-moon{
+  margin-left: 30em;
+  margin-top: -5em;
+}
+
+  /* footer */
+}

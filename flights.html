@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Flights on Flights</title>
+  </head>
+  <body>
+    <div class="mobile_body">
+      <header>
+        <div class="tab">
+          <a href="#" class="tablinks"><i class="fas fa-plane fa-2x"></i><p class="ttitle"><span class="upti">NYC <i class="fas fa-arrows-alt-h"></i> REK</span>
+            <span class="dates">Apr 7 - 21</span></p>
+          </button></a>
+          <a href="#" class="tablinks tabactive"><i class="fas fa-plane fa-2x"></i><p class="ttitle"><span class="upti">NYC <i class="fas fa-arrows-alt-h"></i> REK</span>
+            <span class="dates">Apr 5 - 19</span></p>
+          </button></a>
+        </div>
+
+        <form class="search" action="index.html" method="get">
+          <div class="city_container">
+            <select class="city" name="city">
+              <option value="NYC">New York (NYC)</option>
+              <option value="REK">Reykjavik (REK)</option>
+              <option value="LPB">La Paz (LPB)</option>
+              <option value="BER">Berlin (BER)</option>
+            </select>
+            <select class="city" name="city2">
+              <option value="REK">Reykjavik (REK)</option>
+              <option value="NYC">New York (NYC)</option>
+              <option value="LPB">La Paz (LPB)</option>
+              <option value="BER">Berlin (BER)</option>
+            </select>
+          </div>
+
+          <div class="calendar_container">
+            <input class="days" type="text" name="date" value="15 days x">
+            <i class="fas fa-calendar-alt"></i>
+            <div class="dates2_container">
+              <p class="dates2d"><span class="dates2">Tue Aug 5</span> - <span class="dates2">Tue Aug 19</span></p>
+            </div>
+          </div>
+
+          <input type="button" name="search" value="Search">
+          <i class="fas fa-search fa-1x"></i>
+          <input type="button" name="+" value="+">
+          <a href="filters.html"><i class="fas fa-filter"></i></a>
+        </form>
+      </header>
+
+      <main>
+        <div class="num_flights">
+          <div class="nflights">
+            <h3 class="h3fl"><span class="bold1">15</span> of <span class="bold1">64 flights</span></h3>
+            <a href="#" class="links2"><p class="show">show all</p></a>
+          </div>
+          <p class="bold2 sort">Sort by </p>
+          <form class="sort_by" action="index.html" method="get">
+            <select class="selsort" name="sortby">
+              <option value="price1">price (low to high)</option>
+              <option value="price2">price (high to low)</option>
+              <option value="quick">Quickest</option>
+              <option value="slow">Slowest</option>
+            </select>
+            <i class="fas fa-caret-down"></i>
+          </form>
+        </div>
+        <hr class="hrmain">
+
+        <div class="ad">
+          <div class="left_side">
+            <h3 class="h3op">Check Rates</h3>
+            <button type="button" name="button" class="select_btn"><a href="#">Select</a></button>
+          </div>
+          <a class="hiddesk" href="#">
+            <div class="right_side">
+              <h3 class="h3op">Faster Flights. More Legroom. 2 Bags Free</h3>
+              <p class="normal3 descr">Save time and money with icelandair on your way to Reykjavik</p>
+              <a href="www.icelandair.us" class="adlink">icelandair.us</a>
+              <p class="normal4 abs_grey adtxt">ad</p>
+              <img src="images/download.png" alt="icelandairl">
+            </div>
+          </a>
+        </div>
+        <hr class="hrmain">
+
+        <div class="choice">
+          <div class="right_side">
+            <div class="chtitle">
+              <img src="images/logo1.jpeg" alt="icelandair">
+              <h3 class="h3op h3ch">Icelandair ($863)</h3>
+            </div>
+            <div class="itinerary">
+              <p class="normal3 descr">JFK</p>
+              <p class="bold3 descr numder"> 2:10p</p>
+              <i class="fas fa-long-arrow-alt-right"></i>
+              <p class="normal3 descr">KEF</p>
+              <p class="bold3 descr">11:40p</p>
+              <p class="normal6 descr">5h 30m</p>
+              <p class="normal3 descr">nonstop</p>
+            </div>
+            <div class="itinerary">
+              <p class="normal3 descr">KEF</p>
+              <p class="bold3 descr">10:30a</p>
+              <i class="fas fa-long-arrow-alt-right"></i>
+              <p class="normal3 descr">JFK</p>
+              <p class="bold3 descr">12:25p</p>
+              <p class="normal6 descr">5h 55m</p>
+              <p class="normal3 descr">nonstop</p>
+            </div>
+            <p class="normal4 ecotxt">Economy</p>
+            <p class="normal7 ecotxt">Icelandair operates flight 612, 613.</p>
+          </div>
+        </div>
+        <hr class="hrmain">
+
+        <div class="choice">
+          <div class="right_side">
+            <div class="chtitle">
+              <img src="images/logo1.jpeg" alt="icelandair">
+              <h3 class="h3op h3ch">Icelandair ($863)</h3>
+              <i class="fas fa-moon"></i>
+            </div>
+            <div class="itinerary">
+              <p class="normal3 descr">EWR</p>
+              <p class="bold3 descr numder"> 8:45p</p>
+              <i class="fas fa-long-arrow-alt-right"></i>
+              <p class="normal3 descr">KEF</p>
+              <p class="bold3 descr"> 6:15a</p>
+              <p class="normal6 descr">5h 30m</p>
+              <p class="normal3 descr">nonstop</p>
+            </div>
+            <div class="itinerary">
+              <p class="normal3 descr">KEF</p>
+              <p class="bold3 descr">10:30a</p>
+              <i class="fas fa-long-arrow-alt-right"></i>
+              <p class="normal3 descr">JFK</p>
+              <p class="bold3 descr">12:25p</p>
+              <p class="normal6 descr">5h 55m</p>
+              <p class="normal3 descr">nonstop</p>
+            </div>
+            <p class="normal4 ecotxt">Economy</p>
+            <p class="normal7 ecotxt">Icelandair operates flight 622, 613.</p>
+          </div>
+        </div>
+        <hr class="hrmain">
+
+        <div class="choice">
+          <div class="right_side">
+            <div class="chtitle">
+              <img src="images/logo1.jpeg" alt="icelandair">
+              <h3 class="h3op h3ch">Icelandair ($863)</h3>
+              <i class="fas fa-moon"></i>
+            </div>
+            <div class="itinerary">
+              <p class="normal3 descr">JFK</p>
+              <p class="bold3 descr numder"> 8:40p</p>
+              <i class="fas fa-long-arrow-alt-right"></i>
+              <p class="normal3 descr">KEF</p>
+              <p class="bold3 descr"> 6:15ap</p>
+              <p class="normal6 descr">5h 35m</p>
+              <p class="normal3 descr">nonstop</p>
+            </div>
+            <div class="itinerary">
+              <p class="normal3 descr">KEF</p>
+              <p class="bold3 descr">10:30a</p>
+              <i class="fas fa-long-arrow-alt-right"></i>
+              <p class="normal3 descr">JFK</p>
+              <p class="bold3 descr">12:25p</p>
+              <p class="normal6 descr">5h 55m</p>
+              <p class="normal3 descr">nonstop</p>
+            </div>
+            <p class="normal4 ecotxt">Economy</p>
+            <p class="normal7 ecotxt">Icelandair operates flight 632, 613.</p>
+          </div>
+        </div>
+        <hr class="hrmain">
+      </main>
+      <footer>
+        <a href="#" class="footer_links">Company</a>
+        <a href="#" class="footer_links">Contact</a>
+        <a href="#" class="footer_links">More</a>
+      </footer>
+    </div>
+
+
+
+
+
+
+
+    <div class="desktop_body">
+      <header>
+        <div class="tab">
+          <a href="#" class="tablinks"><i class="fas fa-plane fa-2x"></i><p class="ttitle"><span class="upti">NYC <i class="fas fa-arrows-alt-h"></i> REK</span>
+            <span class="dates">Apr 7 - 21</span></p>
+          </button></a>
+          <a href="#" class="tablinks tabactive"><i class="fas fa-plane fa-2x"></i><p class="ttitle"><span class="upti2">NYC <i class="fas fa-arrows-alt-h"></i> REK</span>
+            <span class="dates">Apr 5 - 19</span></p>
+          </button></a>
+        </div>
+
+        <form class="search" action="index.html" method="get">
+          <div class="city_container">
+            <select class="city" name="city">
+              <option value="NYC">New York (NYC)</option>
+              <option value="REK">Reykjavik (REK)</option>
+              <option value="LPB">La Paz (LPB)</option>
+              <option value="BER">Berlin (BER)</option>
+            </select>
+            <select class="city" name="city2">
+              <option value="REK">Reykjavik (REK)</option>
+              <option value="NYC">New York (NYC)</option>
+              <option value="LPB">La Paz (LPB)</option>
+              <option value="BER">Berlin (BER)</option>
+            </select>
+          </div>
+
+          <div class="calendar_container">
+            <input class="days" type="text" name="date" value="15 days  x">
+            <i class="fas fa-calendar-alt"></i>
+            <div class="dates2_container">
+              <p class="dates2d"><span class="dates2">Tue Aug 5</span> - <span class="dates2">Tue Aug 19</span></p>
+            </div>
+          </div>
+
+          <input type="button" name="search" value="Search">
+          <input type="button" name="+" value="+">
+        </form>
+      </header>
+
+      <aside class="sidebar">
+        <div class="flexdates">
+          <ul class="unlist">
+            <li class="list1"><a href="#"class="list1_links">Price Alert</a></li>
+            <li class="list1"><a href="#"class="list1_links">Fare charts</a></li>
+            <li class="list1"><a href="#"class="list1_links">Airline fees</a></li>
+          </ul>
+          <div class="sn1">
+            <span class="normal2">Flex Dates: <a href="" class="list1_links1">± 3 days</a> | <a href="" class="list1_links1">Explorer</a></span>
+          </div>
+        </div>
+        <hr class="hrmain">
+
+        <div class="pricetrend">
+          <h5 class="h5lay">Price Trend</h5>
+          <img src="images/grafico.png" alt="chart">
+          <div class="walt_container">
+            <p class="bold1 walt">Advice: Walt</p>
+            <p class="bold1 walt">Confidence: 79%</p>
+          </div>
+          <p class="normal1 pmf">Prices may fall within 7 days<i class="fas fa-info"></i></p>
+        </div>
+        <hr class="hrmain">
+
+        <div class="stops_container">
+          <h5 class="h5lay">Stops</h5>
+          <form class="stops" action="index.html" method="get">
+            <div class="checkbox_stops">
+              <input checked="checkedd" type="checkbox" name="checkbox1" value="nonstop">
+              <label for="nonstop" class="normal2 stoplay">nonstop</label>
+              <label for="nonstop" class="normal2 numlay">$863</label>
+            </div>
+            <div class="checkbox_stops">
+              <input checked="checked" type="checkbox" name="checkbox2" value="1 stop">
+              <label for="1 stop" class="normal2 stoplay">1 stop</label>
+              <label for="1 stop" class="normal2 numlay">$1000</label>
+            </div>
+            <div class="checkbox_stops">
+              <input checked="checked" type="checkbox" name="checkbox3" value="2stops">
+              <label for="2stops" class="normal2 stoplay">2+ stops</label>
+              <label for="2stops" class="normal2 numlay">$2731</label>
+            </div>
+          </form>
+          <a href="#" class="list1_links matr">Show airline/stop price matrix</a>
+        </div>
+        <hr class="hrmain">
+
+        <div class="times_container">
+          <h5 class="h5lay">Times</h5>
+          <form class="times" action="index.html" method="get">
+            <p class="bold1 toff">Take-off New York</p>
+            <p class="normal2 toh">Tue 2:00p - Wed 12:00a</p>
+            <input type="range" name="range1" min="1" max="100" value="1">
+            <p class="bold1 toff">Take-off Reykjavik</p>
+            <p class="normal2 toh">Tue 12:00a - Wed 12:00a</p>
+            <input type="range" name="range1" min="1" max="100" value="1">
+          </form>
+          <a href="#" class="list1_links lantim">Show landing times</a>
+        </div>
+        <hr class="hrmain">
+
+        <div class="airports_container">
+          <h5 class="h5lay">Airports</h5>
+          <form class="aiports" action="index.html" method="get">
+            <h6 class="cities">New York</h6>
+            <div class="checkboxair">
+            <input checked="checked" type="checkbox" name="checkbox1" value="JFK">
+              <label for="JFK" class="normal2 airlay">JFK: John F. Kennedy International </label>
+              <label for="JFK" class="normal2 numlayair">$500</label>
+            </div>
+            <div class="checkboxair">
+            <input checked="checked" type="checkbox" name="checkbox2" value="EWR">
+              <label for="EWR" class="normal2 airlay">EWR: Newark</label>
+              <label for="EWR" class="normal2 numlayair">$722</label>
+            </div>
+            <div class="checkboxair">
+            <input checked="checked" type="checkbox" name="checkbox3" value="LGA">
+              <label for="LGA" class="normal2 airlay">LGA: La Guardia</label>
+              <label for="LGA" class="normal2 numlayair">$824</label>
+            </div>
+            <div class="checkboxair">
+            <input checked="checked" type="checkbox" name="checkbox4" value="SWF">
+              <label for="SWF" class="normal2 airlay">SWF: Stewart</label>
+              <label for="SWF" class="normal2 numlayair">$733</label>
+            </div>
+            <h6 class="cities">Reykjavik</h6>
+            <div class="checkboxair">
+            <input checked="checked" type="checkbox" name="checkbox1" value="KEF">
+              <label for="KEF" class="normal2 airlay">KEF: Keflavik Intl</label>
+              <label for="KEF" class="normal2 numlayair">$500</label>
+            </div>
+            <div class="checkboxair">
+            <input checked="checked" type="checkbox" name="checkbox2" value="RKV">
+              <label for="RKV" class="normal2 airlay">RKV: Reykjavic D.</label>
+              <label for="RKV" class="normal2 numlayair">$1337</label>
+            </div>
+          </form>
+        </div>
+      </aside>
+
+      <main>
+        <div class="num_flights">
+          <h3 class="h3fl"><span class="bold1">15</span><span class="ofc"> of </span><span class="bold1">64 flights</span></h3>
+            <a href="#" class="links2"><p class="show">show all</p></a>
+          <div class="sort_container">
+            <p class="bold2 sort">Sort by </p>
+            <form class="sort_by" action="index.html" method="get">
+              <select class="selsort bold2" name="sortby">
+                <option value="price1">price (low to high)</option>
+                <option value="price2">price (high to low)</option>
+                <option value="quick">Quickest</option>
+                <option value="slow">Slowest</option>
+              </select>
+              <i class="fas fa-caret-down"></i>
+            </form>
+          </div>
+        </div>
+        <hr class="hrmain">
+
+        <div class="ad">
+          <div class="left_side">
+            <h3 class="h3op">Check Rates</h3>
+            <input type="button" name="select" value="Select" class="select_btn">
+          </div>
+            <div class="right_side">
+              <div class="middle">
+                <h3 class="h3op">Faster Flights. More Legroom. 2 Bags Free</h3>
+                <p class="normal3 descr">Save time and money with icelandair on your way to Reykjavik</p>
+                <a href="www.icelandair.us" class="adlink">icelandair.us</a>
+              </div>
+              <p class="normal4 abs_grey adtxt">ad</p>
+              <div class="rights">
+                <img src="images/download.png" alt="icelandairl">
+              </div>
+            </div>
+        </div>
+        <hr class="hrmain">
+
+        <div class="choice">
+          <div class="left_side">
+            <div class="leftbor">
+              <h3 class="h3o">$863</h3>
+              <p class="normal5">KAYAK</p>
+              <input type="button" name="select" value="Select" class="select_btn">
+              <div class="leftlink_container">
+                <div class="leftcont">
+                  <a href="#" class="leftlink linklay">Orbitz</a>
+                  <a href="#" class="leftlink numlaym">$902</a>
+                </div>
+                <div class="leftcont">
+                  <a href="#" class="leftlink linklay">Cheap Tickets.com</a>
+                  <a href="#" class="leftlink numlaym">$902</a>
+                </div>
+              </div>
+              <div class="sites">
+                <a href="#" class="leftlinkz">6 more sites <i class="fas fa-sort-down"></i></a>
+              </div>
+            </div>
+          </div>
+            <div class="right_side">
+              <div class="rside">
+                <img src="images/logo1.jpeg" alt="icelandair">
+                <div class="buttons">
+                  <input type="button" name="Details" value="Details">
+                  <input type="button" name="Fares" value="Fares">
+                </div>
+              </div>
+              <div class="middles">
+                <h3 class="h3op h3ch">Icelandair</h3>
+                <div class="itinerary it">
+                  <p class="normal3 descr">JFK</p>
+                  <p class="bold3 descr numder"> 2:10p</p>
+                  <i class="fas fa-long-arrow-alt-right"></i>
+                  <p class="normal3 descr">KEF</p>
+                  <p class="bold3 descr"> 11:40p</p>
+                  <p class="normal6 descr">5h 30m</p>
+                  <p class="normal3 descr">nonstop</p>
+                </div>
+                <div class="itinerary">
+                  <p class="normal3 descr">KEF</p>
+                  <p class="bold3 descr">10:30a</p>
+                  <i class="fas fa-long-arrow-alt-right"></i>
+                  <p class="normal3 descr">JFK</p>
+                  <p class="bold3 descr">12:25p</p>
+                  <p class="normal6 descr">5h 55m</p>
+                  <p class="normal3 descr">nonstop</p>
+                </div>
+                <!-- <i class="fas fa-moon"></i> -->
+              </div>
+              <div class="ecos">
+                <p class="normal4 ecotxt">Economy</p>
+                <p class="normal7 ecotxt">Icelandair operates flight 632, 613.</p>
+              </div>
+            </div>
+          </div>
+        <hr class="hrmain">
+
+        <div class="choice">
+          <div class="left_side">
+            <div class="leftbor">
+              <h3 class="h3o">$863</h3>
+              <p class="normal5">KAYAK</p>
+              <input type="button" name="select" value="Select" class="select_btn">
+              <div class="leftlink_container">
+                <div class="leftcont">
+                  <a href="#" class="leftlink linklay">Orbitz</a>
+                  <a href="#" class="leftlink numlaym">$902</a>
+                </div>
+                <div class="leftcont">
+                  <a href="#" class="leftlink linklay">Cheap Tickets.com</a>
+                  <a href="#" class="leftlink numlaym">$902</a>
+                </div>
+              </div>
+              <div class="sites">
+                <a href="#" class="leftlinkz">6 more sites <i class="fas fa-sort-down"></i></a>
+              </div>
+            </div>
+          </div>
+            <div class="right_side">
+              <div class="rside">
+                <img src="images/logo1.jpeg" alt="icelandair">
+                <div class="buttons">
+                  <input type="button" name="Details" value="Details">
+                  <input type="button" name="Fares" value="Fares">
+                </div>
+              </div>
+              <div class="middles">
+                <h3 class="h3op h3ch">Icelandair</h3>
+                <div class="itinerary it">
+                  <p class="normal3 descr">EWR</p>
+                  <p class="bold3 descr numder"> 8:45p</p>
+                  <i class="fas fa-long-arrow-alt-right"></i>
+                  <p class="normal3 descr">KEF</p>
+                  <p class="bold3 descr"> 6:15a</p>
+                  <p class="normal6 descr">5h 30m</p>
+                  <p class="normal3 descr">nonstop</p>
+                </div>
+                <div class="itinerary">
+                  <p class="normal3 descr">KEF</p>
+                  <p class="bold3 descr">10:30a</p>
+                  <i class="fas fa-long-arrow-alt-right"></i>
+                  <p class="normal3 descr">JFK</p>
+                  <p class="bold3 descr">12:25p</p>
+                  <p class="normal6 descr">5h 55m</p>
+                  <p class="normal3 descr">nonstop</p>
+                </div>
+                <i class="fas fa-moon"></i>
+              </div>
+              <div class="ecos">
+                <p class="normal4 ecotxt">Economy</p>
+                <p class="normal7 ecotxt">Icelandair operates flight 632, 613.</p>
+              </div>
+            </div>
+          </div>
+        <hr class="hrmain">
+
+        <div class="choice">
+          <div class="left_side">
+            <div class="leftbor">
+              <h3 class="h3o">$863</h3>
+              <p class="normal5">KAYAK</p>
+              <input type="button" name="select" value="Select" class="select_btn">
+              <div class="leftlink_container">
+                <div class="leftcont">
+                  <a href="#" class="leftlink linklay">Orbitz</a>
+                  <a href="#" class="leftlink numlaym">$902</a>
+                </div>
+                <div class="leftcont">
+                  <a href="#" class="leftlink linklay">Cheap Tickets.com</a>
+                  <a href="#" class="leftlink numlaym">$902</a>
+                </div>
+              </div>
+              <div class="sites">
+                <a href="#" class="leftlinkz">6 more sites <i class="fas fa-sort-down"></i></a>
+              </div>
+            </div>
+          </div>
+            <div class="right_side">
+              <div class="rside">
+                <img src="images/logo1.jpeg" alt="icelandair">
+                <div class="buttons">
+                  <input type="button" name="Details" value="Details">
+                  <input type="button" name="Fares" value="Fares">
+                </div>
+              </div>
+              <div class="middles">
+                <h3 class="h3op h3ch">Icelandair</h3>
+                <div class="itinerary it">
+                  <p class="normal3 descr">JFK</p>
+                  <p class="bold3 descr numder"> 8:40p</p>
+                  <i class="fas fa-long-arrow-alt-right"></i>
+                  <p class="normal3 descr">KEF</p>
+                  <p class="bold3 descr"> 6:15p</p>
+                  <p class="normal6 descr">5h 35m</p>
+                  <p class="normal3 descr">nonstop</p>
+                </div>
+                <div class="itinerary">
+                  <p class="normal3 descr">KEF</p>
+                  <p class="bold3 descr">10:30a</p>
+                  <i class="fas fa-long-arrow-alt-right"></i>
+                  <p class="normal3 descr">JFK</p>
+                  <p class="bold3 descr">12:25p</p>
+                  <p class="normal6 descr">5h 55m</p>
+                  <p class="normal3 descr">nonstop</p>
+                </div>
+                <i class="fas fa-moon"></i>
+              </div>
+              <div class="ecos">
+                <p class="normal4 ecotxt">Economy</p>
+                <p class="normal7 ecotxt">Icelandair operates flight 632, 613.</p>
+              </div>
+            </div>
+          </div>
+        <hr class="hrmain">
+
+      </main>
+      <footer>
+        <a href="#" class="footer_links">Company</a>
+        <a href="#" class="footer_links">Contact</a>
+        <a href="#" class="footer_links">More</a>
+      </footer>
+    </div>
+  </body>
+</html>
